@@ -28,18 +28,48 @@
         }
         .nav {
             background-color: black;
-        }
-        .img2 {
-            padding-left: 5.16in;
-            position: absolute;
-            right: 0;
-            top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
         .font {
             color: aliceblue;
             font-size: 120px;
             font-weight: 800;
             padding-left: 4.25in;
+        }
+
+        @media (max-width: 767px) {
+            .img2 {
+                display: none;
+            }
+            .font {
+                font-size: 80px;
+                padding-left: 1in;
+            }
+            .circle-button {
+                width: 250px;
+                height: 250px;
+                font-size: 28px;
+            }
+        }
+        @media (max-width: 600px) {
+            .nav {
+                flex-direction: column;
+                text-align: center;
+            }
+            .img {
+                width: 150px;
+            }
+            .font {
+                font-size: 60px;
+                padding-left: 0;
+            }
+            .circle-button {
+                width: 200px;
+                height: 200px;
+                font-size: 24px;
+            }
         }
     </style>
 </head>
