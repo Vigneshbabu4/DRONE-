@@ -18,7 +18,44 @@
             margin: 0;
         }
 
-        
+        @import url('https://fonts.googleapis.com/css2?family=Enriqueta&display=swap');
+.clg-name {
+  font-family: 'Enriqueta', sans-serif; 
+  text-align: center;
+  font-size: 1.6vw;
+  letter-spacing: 1vw;
+  font-weight: bold;
+}
+.sunny-morning-gradient {
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  background-size: cover; 
+  color: black; 
+  padding: 10px 0; 
+}
+.video-background video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+    overflow: hidden;
+}
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-family: Arial, sans-serif;
+}
         .navbar {
             display: flex;
             position: fixed;
@@ -131,8 +168,9 @@
     </style>
 </head>
 <body>
-
-    
+<div class="container-fluid clg-name sunny-morning-gradient">
+        DHANEKULA INSTITUTE OF ENGINEERING & TECHNOLOGY
+    </div> 
     <div class="navbar">
         <a href="#home">Home</a>
         <a href="#internships">Internships</a>
@@ -147,9 +185,13 @@
         <h1 style="font-weight: 600;">DHAN FLY HIGH</h1>
         <p>Explore the world of drones and robotics with us!</p>
         <img src="WhatsApp Image 2025-01-04 at 18.57.10_d14c31c4.jpg" alt="Drone Image">
+    </div>  
+    <div class="video-background">
+        <video autoplay muted loop>
+            <source src="videoplayback.webm" type="video/webm">
+            Your browser does not support the video tag.
+        </video>
     </div>
-
-    
     <section id="internships">
         <h1>Internships</h1>
         <p>Find exciting internship opportunities to build your skills in drone technology.</p>
