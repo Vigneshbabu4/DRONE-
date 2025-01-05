@@ -7,80 +7,106 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            background-image: url('prince.jpg'); 
-            background-size: cover; 
-            background-position: center; 
+            background-color: #E6C891;
         }
         .circle-button {
             width: 300px;
             height: 300px;
             border-radius: 60%;
-            font-size: 38px;
+            font-size: 37px;
             text-align: center;
             line-height: 180px;
             margin: 100px auto;
             display: block;
-            font-weight: 400;
-            color: black;
+            font-weight: 500px; 
+            color: aliceblue;
+            text-decoration: none;
+            background-color: #007bff; 
+            border: none; 
+            transition: all 0.3s ease; 
         }
-        .img {
-            width: 200px;
+        .circle-button:hover {
+            background-color: #0056b3; 
+            cursor: pointer;
         }
+
         .nav {
-            background-color: black;
+            background-image: url("f0ca1946ca8559c109b2364c875ba145.jpg");
             display: flex;
             align-items: center;
             justify-content: space-between;
         }
-        .font {
-            color: aliceblue;
-            font-size: 120px;
-            font-weight: 800;
-            padding-left: 4.25in;
+
+        .img {
+            width: 87%;
         }
 
-        @media (max-width: 767px) {
-            .img2 {
-                display: none;
-            }
-            .font {
-                font-size: 80px;
-                padding-left: 1in;
-            }
-            .circle-button {
-                width: 250px;
-                height: 250px;
-                font-size: 28px;
-            }
+        .img2 {
+            width: 200px;
+            border-radius: 50%;
         }
-        @media (max-width: 600px) {
-            .nav {
-                flex-direction: column;
-                text-align: center;
-            }
-            .img {
-                width: 150px;
-            }
-            .font {
-                font-size: 60px;
-                padding-left: 0;
-            }
+
+        .font {
+            font-weight: 00;
+            color: white;
+        }
+        @media (max-width: 767px) {
             .circle-button {
                 width: 200px;
                 height: 200px;
-                font-size: 24px;
+                font-size: 28px;
+                line-height: 150px;
+                margin: 50px auto;
+            }
+
+            .img2 {
+                width: 150px;
             }
         }
+        @media (max-width: 480px) {
+            .circle-button {
+                width: 150px;
+                height: 150px;
+                font-size: 24px;
+                line-height: 120px;
+                margin: 30px auto;
+            }
+
+            .img2 {
+                width: 120px;
+            }
+
+            .font {
+                font-size: 20px;
+            }
+        }
+        @media (max-width: 1024px) {
+            .circle-button {
+                width: 250px;
+                height: 250px;
+                font-size: 32px;
+                line-height: 170px;
+                margin: 80px auto;
+            }
+
+            .img2 {
+                width: 180px;
+            }
+        }
+
     </style>
 </head>
 <body>
     <nav class="nav">
-        <img class="img" src="DALL·E 2025-01-02 23.40.41 - A professional and modern logo design for a drone club named 'DHAN FLY H.webp">
-        <div class="text-center"><h1 class="font">DHAN</h1></div>
-        <div class="img2"><img class="img" src="DALL·E 2025-01-02 23.40.41 - A professional and modern logo design for a drone club named 'DHAN FLY H.webp"></div>
+        <img class="img" src="logo header.jpg">
+        <img class="img2" src="DALL·E 2025-01-02 23.40.41 - A professional and modern logo design for a drone club named 'DHAN FLY H.webp">
     </nav>
     <div class="container text-center">
-        <a href="MEDIA.HTML"><button id="dhanButton" class="btn btn-primary circle-button">DHAN FLY HIGH</button></a>
+        <a href="MEDIA.HTML">
+            <button id="dhanButton" class="btn circle-button">
+                <div class="font">DHAN FLY HIGH</div>
+            </button>
+        </a>
     </div>
 </body>
 </html>
